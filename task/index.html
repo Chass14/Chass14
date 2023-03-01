@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Experience</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="hero">
+		<div class="hero-text">
+			<h1>Transform Your Life with Education</h1>
+			<p>Join the community of students who have already taken the first step towards their career.</p>
+			<a href="#" class="btn">Apply Now</a>
+		</div>
+	</section>
+	<section class="features">
+		<h2>Why Choose Us?</h2>
+		<div class="feature-box">
+			<i class="fa fa-book"></i>
+			<h3>Expert Instructors</h3>
+			<p>Our instructors are experts in their fields and bring real-world experience to the classroom.</p>
+		</div>
+		<div class="feature-box">
+			<i class="fa fa-clock-o"></i>
+			<h3>Flexible Schedule</h3>
+			<p>We offer both full-time and part-time programs, as well as online options, to fit your busy schedule.</p>
+		</div>
+		<div class="feature-box">
+			<i class="fa fa-graduation-cap"></i>
+			<h3>Hands-on Learning</h3>
+			<p>Our programs emphasize hands-on learning to ensure you have the skills you need to succeed in your career.</p>
+		</div>
+	</section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Experience</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="testimonial">
+		<h2>What Our Students Say</h2>
+		<div class="testimonial-box">
+			<img src="https://i.imgur.com/L7V12Az.jpg" alt="student image">
+			<p>"The instructors at Student Experience are truly amazing. They care about their students and want them to succeed."</p>
+			<h3>John Doe</h3>
+			<span>Marketing Student</span>
+		</div>
+		<div class="testimonial-box">
+			<img src="https://i.imgur.com/5i5YQDE.jpg" alt="student image">
+			<p>"I had a great experience at Student Experience. The instructors are knowledgeable and the curriculum is top-notch."</p>
+			<h3>Jane Smith</h3>
+			<span>Engineering Student</span>
+		</div>
+		<div class="testimonial-box">
+			<img src="https://i.imgur.com/brNLuGA.jpg" alt="student image">
+			<p>"I highly recommend Student Experience to anyone looking to advance their career. The skills I learned here have been invaluable."</p>
+			<h3>Mike Johnson</h3>
+			<span>IT Student</span>
+		</div>
+	</section>
+	<section class="newsletter">
+		<h2>Subscribe to Our Newsletter</h2>
+		<p>Sign up to receive the latest news and updates from Student Experience.</p>
+		<form>
+			<input type="email" placeholder="Enter your email address">
+			<button type="submit">Subscribe</button>
+		</form>
+	</section>
+</body>
+</html>
+
+<html>
+<body>
+<?php
+include("index.php");
+?>
+</body>
+</html>
+
+
+<form method="post" action="update_social_links.php">
+  <div>
+    <label for="facebook_link">Facebook Link:</label>
+    <input type="text" name="facebook_link" id="facebook_link">
+  </div>
+  <div>
+    <label for="linkedin_link">LinkedIn Link:</label>
+    <input type="text" name="linkedin_link" id="linkedin_link">
+  </div>
+  <div>
+    <label for="instagram_link">Instagram Link:</label>
+    <input type="text" name="instagram_link" id="instagram_link">
+  </div>
+  <input type="submit" value="Update">
+</form>
+
+<div class="social-icons top">
+  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+</div>
+<div class="social-icons bottom">
+  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+
+<img id="myImage" src="placeholder.jpg" alt="Placeholder Image">
+
+<!-- JavaScript -->
+<script>
+  $(document).ready(function() {
+    // Fetch image URL from backend system
+    $.get("/api/image", function(data) {
+      // Update image source attribute with URL from backend
+      $("#myImage").attr("src", data.url);
+    });
+  });
+</script>
+
+
+
+<div class="social-icons-top">
+  <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+<!-- Content of the page -->
+
+<div class="social-icons-bottom">
+  <a href="#" class="social-icon facebook"><i class="fab fa-facebook"></i></a>
+  <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+  <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+</div>
+
+
+
+
+<!-- Popup Form -->
+<div class="popup" id="popup">
+  <div class="popup-container">
+    <h2>Get in Touch</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <button type="submit">Submit</button>
+    </form>
+    <a href="#" class="close" onclick="closePopup()">X</a>
+  </div>
+</div>
+
+<!-- Content of the page -->
+<div class="content">
+  <h1>Welcome to our Website</h1>
+  <p>Click the button below to get in touch with us.</p>
+  <button onclick="openPopup()">Get in Touch</button>
+</div>
